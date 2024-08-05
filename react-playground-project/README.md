@@ -1,30 +1,14 @@
-# React + TypeScript + Vite
+@babel/standalone babel 的浏览器版本   实时把 tsx 代码编译为 js
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+import引入的文件： 把一段 JS 代码，用 URL.createObjectURL 和 new Blob 的方式变为一个 url
 
-Currently, two official plugins are available:
+引入 react 和 react-dom 的包：  import maps  +  esm.sh
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+编辑器 @monaco-editor/react  ,类型自动导入  @typescript/ata
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+预览 iframe,通过 postMessage 和父窗口通信来显示代码运行时的错误
 
-- Configure the top-level `parserOptions` property like this:
+通过 fflate + btoa 实现了文件内容的编码、解码，可以通过链接分享代码
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+ Web Worker 拆分编译逻辑到 worker 线程来进行性能优化，消除了 long lask
