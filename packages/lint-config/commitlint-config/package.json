@@ -1,0 +1,21 @@
+{
+  "name": "@lp-react/commitlint-config",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "default": "./index.js"
+    }
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0"
+  },
+  "peerDependencies": {
+    "@commitlint/cli": "^19.6.0"
+  }
+}

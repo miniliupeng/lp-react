@@ -1,0 +1,4 @@
+{
+  "extends": "@lp-react/typescript-config/tsconfig.node",
+  "include": ["vite.config.ts"]
+}
