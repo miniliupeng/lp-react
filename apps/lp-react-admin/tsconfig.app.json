@@ -1,4 +1,12 @@
 {
   "extends": "@lp-react/typescript-config/tsconfig.app",
-  "include": ["src"]
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@lp-react/*": ["../../packages/*/src"]
+    }
+  },
+
+  "include": ["../../packages/*/src", "src"]
 }

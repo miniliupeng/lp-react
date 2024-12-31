@@ -4,25 +4,27 @@
   "type": "module",
   "private": true,
   "exports": {
-    ".": "./src/index.ts",
-    "./web-container": "./src/web-container.tsx",
-    "./button": "./src/button.tsx",
-    "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx"
+    ".": "./src/index.ts"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
-    "gen": "turbo gen react-component",
-    "check-types": "tsc --noEmit"
+    "build": "vite build"
   },
   "devDependencies": {
     "@lp-react/typescript-config": "workspace:^",
-    "@turbo/gen": "^1.12.4",
-    "@types/node": "^20.11.24",
+    "@types/node": "catalog:",
     "@types/react": "catalog:",
-    "@types/react-dom": "catalog:"
+    "@types/react-dom": "catalog:",
+    "@vitejs/plugin-react-swc": "catalog:",
+    "autoprefixer": "catalog:",
+    "postcss": "catalog:",
+    "tailwindcss": "catalog:",
+    "vite": "catalog:"
   },
   "dependencies": {
+    "@lp-react/hooks": "workspace:^",
+    "antd": "catalog:",
+    "framer-motion": "^11.15.0",
     "react": "catalog:",
     "react-dom": "catalog:"
   }
