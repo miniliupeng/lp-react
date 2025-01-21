@@ -27,7 +27,7 @@ export default {
 
     // SCSS 特定规则
     'at-rule-no-unknown': null, // 关闭 at 规则未知检查
-    'scss/at-rule-no-unknown': true, // 启用 SCSS 的 at 规则检查
+    'scss/at-rule-no-unknown': null, // 启用 SCSS 的 at 规则检查
     'function-no-unknown': null, // 关闭函数未知检查
     'scss/function-no-unknown': [
       true, // 启用 SCSS 函数未知检查

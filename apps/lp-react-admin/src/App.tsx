@@ -72,7 +72,7 @@ const App = () => {
   return (
     <div>
       <ScrollBoard
-        scrollY={320}
+        scrollY={200}
         data={data}
         columns={[
           {

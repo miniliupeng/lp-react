@@ -1,9 +1,10 @@
 // packages/shared/vite.config.ts
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
+import UnoCSS from 'unocss/vite'
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), UnoCSS()],
   build: {
     // 产物输出目录，默认值就是 dist。我们使用默认值，注释掉此字段。
     // outDir: 'dist',

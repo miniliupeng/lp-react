@@ -15,10 +15,9 @@
     "@types/node": "catalog:",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
+    "@unocss/reset": "^65.4.2",
     "@vitejs/plugin-react-swc": "catalog:",
-    "autoprefixer": "catalog:",
-    "postcss": "catalog:",
-    "tailwindcss": "catalog:",
+    "unocss": "catalog:",
     "vite": "catalog:"
   },
   "dependencies": {
